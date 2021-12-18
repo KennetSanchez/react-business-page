@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-flow: row wrap;
+    background: rgb(32,58,163);
+background: linear-gradient(180deg, rgba(32,58,163,1) 25%, rgba(41,43,87,1) 96%);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+svg{
+    width: 70px;
+    height: 70px;
+}

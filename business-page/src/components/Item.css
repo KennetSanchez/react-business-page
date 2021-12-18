@@ -1,0 +1,7 @@
+.cardDiv{
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    background: #f2f2ff;
+    -webkit-box-shadow: 21px 21px 42px #94949c, -21px -21px 42px #ffffff;
+    box-shadow: 21px 21px 42px #94949c, -21px -21px 42px #ffffff;    
+}

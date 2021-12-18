@@ -1,20 +1,26 @@
 import React, { Component } from "react";
+import "./Item.css"
 
 class Item extends Component {
   render() {
     return (
       <div
-        class="card shadow p-3 mb-5 bg-body rounded"
+        className="card shadow p-3 mb-5 bg-body rounded"
         style={{ width: 20 + "rem" }}
+        className="cardDiv"
       >
         <img
-          src="https://www.dropbox.com/s/5xp7sy21sqb6jm4/ImageCap.jpg?raw=1"
-          class="card-img-top"
+          src={this.props.imageLink}
+          className="card-img-top"
           alt="..."
+          style={{ maxHeight: 50 + "%" }}
         ></img>
-        <div class="card-body">
-          <h5 class="card-title"> { this.props.plantName }</h5>
-          <p class="card-text">
+        <div className="card-body">
+            
+          <h5 className="card-title" style={{paddingTop: 5+"px"}}> { this.props.plantName }</h5>
+          <p className="card-text">
+            <br></br> 
+
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
