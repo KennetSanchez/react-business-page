@@ -3,6 +3,7 @@
     {
       "name": "Virginica",
       "price": 12000,
+      "description" : "xd",
       "discount": 0,
       "avaible": 10
     },

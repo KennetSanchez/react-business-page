@@ -4,7 +4,8 @@ import "./Item.css"
 class Item extends Component {
   render() {
     return (
-      <div
+      <a className = "cardsLink" href= {this.props.link} target="blank">
+        <div
         className="card shadow p-3 mb-5 bg-body rounded"
         style={{ width: 20 + "rem" }}
         className="cardDiv"
@@ -17,15 +18,15 @@ class Item extends Component {
         ></img>
         <div className="card-body">
             
-          <h5 className="card-title" style={{paddingTop: 5+"px"}}> { this.props.plantName }</h5>
+          <h5 className="card-title"> { this.props.plantName }</h5>
           <p className="card-text">
             <br></br> 
 
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            {this.props.description}
           </p>
         </div>
       </div>
+      </a>
     );
   }
 }
